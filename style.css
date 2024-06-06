@@ -1,0 +1,105 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-size:62.5% ;
+}
+.cont{
+    background-image: linear-gradient(to bottom, #26a0da, #314755);
+    padding:5rem;
+}
+.inp_cont{
+    background-color: #141E46;
+    color: white;
+    padding:3rem;
+}
+.bgcard{
+    background-image: url(./slide2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bgshadow{  
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.4);  
+}
+label{
+    font-size: 1.3rem;
+}
+p{
+    font-size: 1.3rem;
+}
+input[type='text']{
+    font-size: 1.3rem;
+}
+input[type='password']{
+    font-size: 1.3rem;
+}
+input[type='email']{
+    font-size: 1.3rem;
+}
+input[type='tel']{
+    font-size: 1.3rem;
+}
+input[type='date']{
+    font-size: 1.3rem;
+}
+input[type='file']{
+    font-size: 1.3rem;
+}
+
+
+/* *****************login page******************** */
+
+.grid_container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-image: linear-gradient(to bottom, #26a0da, #314755);
+    width:100%;
+    margin:auto;
+    padding:2rem
+}
+.one{
+    background-color: #141E46;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.4);  
+    border-radius: 0px 15px 15px 0px; 
+    color: white;
+    padding:3rem;
+}
+.left_cont{
+    border-radius: 15px 0px 0px 15px; 
+    background-image: url('./slide1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100vh
+}
+.log{
+    font-size: 1.6rem;
+}
+
+
+
+/* *****************media query******************* */
+
+@media only screen and (max-width:900px){
+
+    .bgcard{
+        display: none;
+    }
+    .inp_cont{
+        width: 100% !important;
+    }
+    .grid_container{
+        display: block;
+    }
+    .one{
+        border-radius: 15px 15px 15px 15px; 
+    }
+    .left_cont{
+        display: none;
+    }
+   
+
+}
+
