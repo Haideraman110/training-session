@@ -14,13 +14,22 @@ html{
 .inp_cont{
     background-color: #141E46;
     color: white;
-    padding:3rem;
     border-radius: 0px 15px 15px 0px;
 }
+.inp_cont form{
+    padding:3rem
+}
 .bgcard{
-    background-image: url(./slide2.jpg);
+    /* background-image: url(./slide2.jpg); */
     background-repeat: no-repeat;
     background-size:cover;
+    border-radius: 15px 0px 0px 15px;
+
+}
+.bgcard img{
+    max-width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
     border-radius: 15px 0px 0px 15px;
 }
 .bgshadow{  
@@ -70,10 +79,15 @@ input[type='file']{
     border-radius: 0px 15px 15px 0px;
 }
 .left_cont_image{
-    background-image: url('./slide1.jpg');
+    /* background-image: url('./slide1.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
-    height:100vh;
+    /* max-width: 100%;
+    height:100vh; */
+    border-radius: 15px 0px 0px 15px;
+}
+.left_cont_image img{
+    max-width: 100%;
     border-radius: 15px 0px 0px 15px;
 }
 .log{
@@ -85,8 +99,8 @@ input[type='file']{
 /* *****************media query******************* */
 
 @media only screen and (max-width:767px){
-    .bgcard{
-        height: 100vh;
+    .bgcard img{
+        /* height: 100vh; */
         border-radius: 15px 15px 0px 0px;
     }
     .inp_cont{
@@ -94,14 +108,16 @@ input[type='file']{
     }
 }
 
+
 @media only screen and (max-width:900px){
     
     .grid_container{
         display: block;
     }
-    .left_cont_image{
+    .left_cont_image img{
         display: block;
         border-radius: 15px 15px 0px 0px;
+       
     }
    
     .right_cont{
